@@ -1,11 +1,23 @@
-import React from 'react';
-import './App.css';
+import React,{useState} from 'react';
+import Navbar from "./components/Header/Navbar";
+
+import GlobalStyle from './styles/Global';
 
 function App() {
+   const [navbarOpen ,setNavbarOpen] = useState(false);
+
+  const handleNavbar = () => {
+    setNavbarOpen( {navbarOpen: !navbarOpen});
+  }
+   
   return (
-    <div>
-      
-    </div>
+    <>
+        <Navbar 
+          navbarState={navbarOpen} 
+          handleNavbar={handleNavbar}
+        />
+        <GlobalStyle />
+      </>
   );
 }
 
