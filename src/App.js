@@ -1,24 +1,24 @@
-import React,{useState} from 'react';
+import React from 'react';
 import Navbar from "./components/Header/Navbar";
+import Welcome from './components/Pages/Welcome';
+import useSticky from './hooks/useSticky';
 
-import GlobalStyle from './styles/Global';
+import "./App.css"
 
 function App() {
-   const [navbarOpen ,setNavbarOpen] = useState(false);
+  const { isSticky, element } = useSticky()
 
-  const handleNavbar = () => {
-    setNavbarOpen( {navbarOpen: !navbarOpen});
-  }
-   
-  return (
-    <>
-        <Navbar 
-          navbarState={navbarOpen} 
-          handleNavbar={handleNavbar}
-        />
-        <GlobalStyle />
-      </>
+
+ 
+  return (   
+      <React.Fragment>
+        <Navbar sticky={isSticky} />
+        <Welcome element={element}/>        
+      </React.Fragment>
+    
   );
 }
 
 export default App;
+
+
