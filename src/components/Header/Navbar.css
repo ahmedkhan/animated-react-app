@@ -1,4 +1,4 @@
-.navbar {
+.Navbar-main {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -7,9 +7,14 @@
   position: absolute;
   z-index: 1;
   width: 100%;
+  margin: 0;  
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 1rem;
 }
 @media screen and (max-width:585px){
-  .navbar {
+  .Navbar-main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,9 +23,14 @@
   position: absolute;
   z-index: 1;
   width: 100%;
+  margin: 0;  
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 1rem;
   }
 }
-
+ 
 .navbar-sticky {
   background: #333;
   position: fixed;
@@ -35,13 +45,25 @@
   align-items: center;
   justify-content: center;
 }
-
+ 
 .navbar--logo {
   width: 2rem;
   height: 2rem;
   margin-right: 0.5rem;
   animation: rotate 0.7s ease-in-out 0.5s;
 }
+
+.nav-link {
+  color: #e74c3c;
+  font-family:Georgia;
+  font-style:normal;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
 
 .navbar--link {
   display: flex;
