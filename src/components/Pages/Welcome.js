@@ -14,20 +14,22 @@ const Welcome = ({ element }) => {
       autoplay: true,
       animationData: require('../../assets/images/writer.json')
     })
-  }, [])
+  }, []) 
   return (
     <main>
       <section className="container-fluid" >
         <div className="row" ref={element}>
-        <div className="col-7">
-          <div className="welcome--logo" ref={container}></div>
-           <p className="text">Even if you scroll, i will stick with you...</p> 
-           <div className="Button">
-             <button class="Btn one">Hire a Writer</button>
-             <button  class="Btn two">Contact Us</button>            
-           </div>           
-          </div>          
-          <div className="col-5"><h1>Hello world</h1></div>
+          <div className="col-">
+            <div className="welcome--logo" ref={container}></div>
+            <p className="text">Even if you scroll, i will stick with you...</p>
+            <div className="Button">
+              <button class="Btn one">Hire a Writer</button>
+              <button class="Btn two">Contact</button>
+            </div>
+          </div>
+          <div className="col-">
+          <h1>Hello</h1>
+          </div>
         </div>
       </section>
       <About />
