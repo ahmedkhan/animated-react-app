@@ -19,15 +19,15 @@ const Welcome = ({ element }) => {
     <main>
       <section className="container-fluid" >
         <div className="row" ref={element}>
-          <div className="col-">
+          <div className="col-6">
             <div className="welcome--logo" ref={container}></div>
             <p className="text">Even if you scroll, i will stick with you...</p>
             <div className="Button">
-              <button class="Btn one">Hire a Writer</button>
-              <button class="Btn two">Contact</button>
+              <button className="Btn one">Hire a Writer</button>
+              <button className="Btn two">Contact</button>
             </div>
           </div>
-          <div className="col-">
+          <div className="col-6">
           <h1>Hello</h1>
           </div>
         </div>

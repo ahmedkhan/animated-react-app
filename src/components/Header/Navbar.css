@@ -1,4 +1,4 @@
-.Navbar-main {
+.col-12 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -13,8 +13,8 @@
   color: #fff;
   font-size: 1rem;
 }
-@media screen and (max-width:585px){
-  .Navbar-main {
+@media screen and (max-width:525px){
+  .col-12 {
   display: flex;
   flex-direction: column;
   align-items: center;
