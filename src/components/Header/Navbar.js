@@ -28,7 +28,7 @@ const Navbar = ({ sticky }) => {
   const toggleNav = () => {
     setNavVisibility(!isNavVisible);
   };
-  
+   
 return (
   <header className={sticky ? "Navbar-main navbar-sticky" : "Navbar-main"}>
       <div className="navbar--logo-holder">
