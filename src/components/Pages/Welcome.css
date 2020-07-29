@@ -9,7 +9,7 @@
   padding: 150px 0 0;*/  
 } 
  
-@media screen and (min-width: 425px){
+@media screen and (min-width: 700px){
   .container-fluid {
     flex-direction: column;
   }
@@ -29,7 +29,7 @@
   margin: auto;
 }
 
-
+  
 .Btn {
   border: 1px solid;
   border-radius: 20px;
