@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import './Welcome.css'
-
+ 
 import About from "./About"
 import lottie from "lottie-web";
 const Welcome = ({ element }) => {
@@ -20,7 +20,7 @@ const Welcome = ({ element }) => {
       <section className="container-fluid" >
         <div className="row" ref={element}>
           <div className="col-sm">
-            <div class="col-sm" ref={container}></div>
+            <div className="col-sm" ref={container}></div>
             <p className="text">Even if you scroll, i will stick with you...</p>
             <div className="Button">
               <button className="Btn one">Hire a Writer</button>
