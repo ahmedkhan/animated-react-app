@@ -1,4 +1,4 @@
-.col-12 {
+.Navbar-main {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -13,8 +13,9 @@
   color: #fff;
   font-size: 1rem;
 }
-@media screen and (max-width:525px){
-  .col-12 {
+
+@media screen and (max-width:720px){
+  .Navbar-main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,6 +56,7 @@
 
 .nav-link {
   color: #e74c3c;
+  display: inline-block;
   font-family:Georgia;
   font-style:normal;
   cursor: pointer;
@@ -66,9 +68,13 @@
 
 
 .navbar--link {
-  display: flex;
+  display: flex;   
+  align-items: center;
   list-style: none;
+  padding:.5rem!important;
 }
+
+
 
 .navbar--link-item {
   margin: 0.4rem 1rem 0 0;
