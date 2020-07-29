@@ -40,23 +40,13 @@ return (
         timeout={350}
         classNames="NavAnimation"
         unmountOnExit
-      >
-      <ul className="navbar--link ">
-       <li className="nav-item">
-        <a className="nav-link " href="/">Home </a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/about">About</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link " href="/contact">Contact</a>        
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/blog" >Blogs</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/pricing" >Pricing</a>
-      </li>
+      > 
+      <ul className="navbar--link">
+      <li className="nav-link">Home</li>
+      <li className="nav-link">About</li>
+      <li className="nav-link">Pricing</li>
+      <li className="nav-link">Contact us</li>
+      <li className="nav-link">Blog</li>
     </ul>
       </CSSTransition>
       <button onClick={toggleNav} className="Burger">

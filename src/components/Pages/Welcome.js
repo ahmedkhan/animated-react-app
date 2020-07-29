@@ -22,7 +22,7 @@ const Welcome = ({ element }) => {
           <div className="col-sm">
             <div className="col-sm" ref={container}></div>
             <p className="text">Even if you scroll, i will stick with you...</p>
-            <div className="Button">
+            <div className="row">
               <button className="Btn one">Hire a Writer</button>
               <button className="Btn two">Contact</button>
             </div>
