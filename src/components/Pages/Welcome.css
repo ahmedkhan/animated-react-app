@@ -33,6 +33,9 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 800px) {
@@ -102,3 +105,97 @@
   width: 100%
 }
 
+.col-sm{  
+  color: #fafafa;
+}
+
+.item {
+  height: 70vh;
+  position: relative;
+}
+
+
+.cover {
+  padding: 75px 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;  
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  position: relative;
+  padding: 56px;
+  overflow: hidden;
+}
+.line {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  border: 9px solid #fff;
+  -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+  clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+}
+.item .cover .header-content h2 {
+  font-weight: 300;
+  font-size: 35px;
+  color: #fff;
+}
+
+.item .cover .header-content h1 {
+  font-size: 46px;
+  font-weight: 500;
+  margin: 5px 0 20px;
+  word-spacing: 3px;
+  color: #fff;
+}
+
+.item .cover .header-content h4 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #fff;
+}
+
+.active h1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+
+.active h2 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+
+.active h4 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+  animation-delay: 0.3s;
+}
+
+.active .line {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInLeft;
+  animation-delay: 0.3s;
+}

@@ -1,10 +1,15 @@
 import React, { useEffect, useRef } from 'react'
 import './Welcome.css'
- 
-import About from "./About"
+
+import About from "./About";
 import lottie from "lottie-web";
+import Carousel from '../OwlCarousel/OwlCarousel';
+
+
+
 const Welcome = ({ element }) => {
   const container = useRef(null)
+  
 
   useEffect(() => {
     lottie.loadAnimation({
@@ -14,8 +19,8 @@ const Welcome = ({ element }) => {
       autoplay: true,
       animationData: require('../../assets/images/writer.json')
     })
-  }, []) 
-  return (
+  }, [])
+  return ( 
     <main>
       <section className="container-fluid" >
         <div className="row" ref={element}>
@@ -27,9 +32,9 @@ const Welcome = ({ element }) => {
               <button className="Btn two">Contact</button>
             </div>
           </div>
-          <div className="col-sm">
-          <h1>Hello</h1>
-          </div>
+          <div className="col-sm"> 
+          <Carousel/> 
+          </div>          
         </div>
       </section>
       <About />
