@@ -5,20 +5,21 @@ import useSticky from './hooks/useSticky';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
-
-
-
+import About from '.././src/components/Pages/About';
+ 
+ 
 function App() {
   const { isSticky, element } = useSticky()
 
-
+ 
   
   return (   
-      <div>
+      <main>
         <Navbar sticky={isSticky} />
-        <Welcome element={element}/>        
-      </div>
-    
+        <Welcome element={element}/>
+        <About/>            
+     
+     </main>
   );
 }
 

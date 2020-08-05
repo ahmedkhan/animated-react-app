@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import useWebAnimations, { fadeInDown } from "@wellyshen/use-web-animations";
+
 const Item = styled.div`
   height: 80vh;
   position: relative;
@@ -22,7 +22,7 @@ const Line = styled.div`
 content: "";
 display: inline-block;
 width: 100%;
-height: 100%;
+height:100%;
 left: 0;
 top: 0;
 position: absolute;
@@ -30,12 +30,16 @@ border: 9px solid #fff;
 -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
 clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
 }
+
 `;
 
 const HeaderContent = styled.div`
 position: relative;
 padding: 56px;
 overflow: hidden;
+@media screen and (max-width: 499px) {     
+    padding:10px;  
+
 }
 `;
 
@@ -43,6 +47,9 @@ const H2 = styled.h2`
 font-weight: 300;
 font-size: 35px;
 color: #fff;
+@media screen and (max-width: 499px) {     
+  font-weight: 150;
+  font-size: 16px;  
 
 }
 `;
@@ -53,7 +60,9 @@ const H1 = styled.h1`
  margin: 5px 0 20px;
  word-spacing: 3px;
  color: #fff;
- 
+ @media screen and (max-width: 499px) {     
+  font-weight: 300;
+  font-size: 34px;  
 }
 `;
 
@@ -62,72 +71,65 @@ const H4 = styled.h4`
     font-weight: 300;
     line-height: 36px;
     color: #fff;
+@media screen and (max-width: 499px) {     
+  font-weight: 150;
+  font-size: 12px;  
 }
 `;
-function Carousel() {
-  const { keyframes, timing } = fadeInDown;
-  const { ref } = useWebAnimations({
-  keyframes,
-  timing: {
-    ...timing,
-    delay: 100, // Delay 1s
-    duration: timing.duration * 0.75, // Speed up the animation
-    
-  },
-});
+function Carousel() {  
   return (   
   
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+  <ol className="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner">
-  <div class="carousel-item active" data-interval="5000">
+  <div className="carousel-inner">
+  <div className="carousel-item active" data-interval="5000">
     <Item>
       <Cover>        
           <HeaderContent>
             <Line></Line>
-            <H2>Teimagine Digital Experience with</H2>
-            <H1 ref={ref}>Start-ups and solutions</H1>
-            <H4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</H4>
+            <H2>Assignment Writing Service to Solve Your Academic Issues</H2>
+            <H1>Assignment solutions</H1>
+            <H4>Get assistance with your essay in humanities or social sciences</H4>
           </HeaderContent>        
       </Cover>
     </Item>
    </div> 
-    <div class="carousel-item" data-interval="5000">
+    <div className="carousel-item" data-interval="5000">
       <Item>
       <Cover>        
           <HeaderContent>
             <Line></Line>
-            <H2>Teimagine Digital Experience with</H2>
-            <H1 ref={ref}>Start-ups and solutions</H1>
-            <H4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</H4>
+            <H2>Custom Assignment Writing Service from Experts</H2>
+            <H1>Assignment solutions</H1>
+            <H4>Find help with complex programming, engineering, or mathematics assignment</H4>
           </HeaderContent>        
       </Cover>
     </Item>
     </div>
-    <div class="carousel-item" data-interval="5000">
+    <div className="carousel-item" data-interval="5000">
      <Item>
       <Cover>        
           <HeaderContent>
             <Line></Line>
-            <H2>Teimagine Digital Experience with</H2>
-            <H1 ref={ref}>Start-ups and solutions</H1>
-            <H4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</H4>
+            <H2>Professional Assignment Writing Services on Fair Termsh</H2>
+            <H1>Assignment solutions</H1>
+            <H4>Custom Assignment Writing Service from Experts</H4>
           </HeaderContent>        
       </Cover>
     </Item>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+  <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+  <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="sr-only">Next</span>
   </a>
 </div>
 
