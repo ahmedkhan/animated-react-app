@@ -19,7 +19,7 @@ const Welcome = ({ element }) => {
       autoplay: true,
       animationData: require('../../assets/images/writer.json')
     })
-  }, [])
+  }, []) 
   return (
     <section className="container-fluid" >
       <div className="row" ref={element}>

@@ -1,0 +1,26 @@
+.explorSec {  
+  max-width: 1400px;
+  margin: 40px auto 0 auto;
+  
+}
+
+@media (min-width: 800px) {
+  .explorSec {
+    display: flex;       
+    justify-content: flex-end;
+  }    
+}
+
+
+
+.explor-call-out {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 50%;
+}
+
+
+
+
+

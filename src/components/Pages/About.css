@@ -20,14 +20,19 @@
   width: 100%;
 }
 .h1text {
-  font-size: calc((21 * (1em - 13px) - -2em - 1px));
+  
   color: #003a78;
   line-height: 1.2;
   letter-spacing: 0;
   font-weight: 700;
   margin-bottom: 40px;
 }
-
+@media (min-width:800px){
+  .h1text{
+    font-size: calc((21 * (1em - 13px) - -2em - 1px));
+    width: 100%;
+  }
+}
 .Ptext {
   font-size: calc((1 * (1em - 13px) - -2em - 10px));
   color: #363636;
@@ -47,8 +52,7 @@
   display: inline-block;
   font-size: calc((-0.99 * (1em - 13px) - -2em - 12px));
   color: #003a78;
-  line-height: 1;
-  
+  line-height: 1;  
   letter-spacing: 0;
   font-weight: 700;
   padding-bottom: 12px;
