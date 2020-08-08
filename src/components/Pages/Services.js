@@ -12,7 +12,7 @@ const Services = () => {
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      animationData: require('../../assets/images/writer.json')
+      animationData: require('../../assets/images/services.json')
     })
   }, [])
   return (

@@ -7,14 +7,14 @@
     display: flex;
     justify-content: space-between;
   }
-}
+} 
 .call-out {
   padding: 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
   flex-basis: 50%;
 }
-
+ 
 .image {
   padding-top: 100px;
   width: 100%;
